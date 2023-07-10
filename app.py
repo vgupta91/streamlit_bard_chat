@@ -72,8 +72,8 @@ def handle_userinput(user_question):
 
 
 def main():
-    # os.environ["OPENAI_API_KEY"] = "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"
-    # os.environ["OPENAI_API_KEY"] = "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"
+    # os.environ["OPENAI_API_KEY"] = "sk-XXXX"
+    # os.environ["OPENAI_API_KEY"] = "sk-XXXX"
     # load_dotenv()
     st.set_page_config(page_title="Chat with multiple PDFs",
                        page_icon=":books:")
