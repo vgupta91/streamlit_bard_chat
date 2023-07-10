@@ -11,6 +11,8 @@ def handle_userinput(user_question):
     token = "Ygi1SjuTG12VYmLL5he9ui93b1-gSe0Cdbl1IS41l2yRbEWlShgGujF5y4LKDZK8h77ryw."
     bard = Bard(token=token, timeout=60)
     response1 = bard.get_answer(user_question)['content']
+    if 'Response Error:' not in response1:
+        response1 = 'Something went wrong, Please try again!'
     st.session_state.chat_history.append(user_question)
     st.session_state.chat_history.append(response1)
 
