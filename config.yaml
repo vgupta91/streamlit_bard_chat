@@ -1,0 +1,16 @@
+credentials:
+  usernames:
+    vgupta:
+      email: vishalgupta.gupta91@gmail.com
+      name: Vishal Gupta
+      password: $2b$12$7A0eXDlKtKJguNAxiIP5heML9sumh/WsjhTiceMfUYRowfaxBDxha # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: Ygi1SjuTG12VYmLL5he9ui93b1-gSe0Cdbl1IS41l2yRbEWlShgGujF5y4LKDZK8h77ryw. # Must be string
+  name: __Secure-1PSID
+preauthorized:
+  emails:
+  - vgvishalgupta91@gmail.com
+
+
+#hashed_passwords = stauth.Hasher(['Krishan@123']).generate()

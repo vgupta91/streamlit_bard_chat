@@ -1,6 +1,15 @@
 import streamlit as st
+import streamlit_authenticator as sa
 from bardapi import Bard
 from htmlTemplates import css, bot_template, user_template
+
+
+auth = sa.Authenticator(
+    SECRET_KEY,
+    token_url="/token",
+    token_ttl=3600,
+    password_hashing_method=sa.PasswordHashingMethod.BCRYPT,
+)
 
 
 if 'chat_history' not in st.session_state:
